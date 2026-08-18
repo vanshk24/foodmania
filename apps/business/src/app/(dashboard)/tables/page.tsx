@@ -18,6 +18,17 @@ export default function BusinessTablesPage() {
     try {
       const stored = localStorage.getItem("fm_restaurant_id");
       if (stored) rId = stored;
+      if (!rId) {
+        const u = localStorage.getItem("fm_biz_user");
+        if (u) {
+          const parsed = JSON.parse(u);
+          if (parsed.restaurantId) rId = parsed.restaurantId;
+        }
+      }
+      if (!rId) {
+        const params = new URLSearchParams(window.location.search);
+        rId = params.get("restaurantId") || "";
+      }
     } catch {}
     setCurrentRestaurantId(rId);
 

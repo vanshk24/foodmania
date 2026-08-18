@@ -142,13 +142,30 @@ export const addMenuItem = async (
     }
   }
 
+  let targetCategoryId = data.categoryId;
+  if (!targetCategoryId || targetCategoryId.startsWith("cat-")) {
+    let cat = await prisma.menuCategory.findFirst({
+      where: { restaurantId: data.restaurantId },
+    });
+    if (!cat) {
+      cat = await prisma.menuCategory.create({
+        data: {
+          name: "Main Course",
+          restaurantId: data.restaurantId,
+          sortOrder: 1,
+        },
+      });
+    }
+    targetCategoryId = cat.id;
+  }
+
   return prisma.menuItem.create({
     data: {
       name: data.name,
       price: Number(data.price),
       description: data.description,
       imageUrl: data.imageUrl || "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500",
-      categoryId: data.categoryId,
+      categoryId: targetCategoryId,
       restaurantId: data.restaurantId,
       isAvailable: data.isAvailable !== undefined ? Boolean(data.isAvailable) : true,
     },

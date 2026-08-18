@@ -18,7 +18,12 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
 function getAdminToken(): string {
   if (typeof window === "undefined") return "";
   try {
-    return localStorage.getItem("fm_admin_token") || "";
+    return (
+      localStorage.getItem("fm_admin_token") ||
+      localStorage.getItem("fm_token") ||
+      localStorage.getItem("food_mania_token") ||
+      ""
+    );
   } catch {
     return "";
   }

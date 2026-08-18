@@ -40,32 +40,84 @@ export default function SmartQRTablePage({ params }: SmartQRTablePageProps) {
   });
 
   React.useEffect(() => {
-    fetch(`${API_BASE_URL}/restaurants/${params.id}`)
-      .then((res) => res.json())
-      .then((json) => {
-        const data = json.data || json;
+    async function loadTableRestaurant() {
+      try {
+        let res = await fetch(`${API_BASE_URL}/restaurants/${params.id}`);
+        let json = await res.json().catch(() => null);
+        let data = json?.data || json;
+
+        // If direct lookup by id/slug failed, try fetching all restaurants and matching by id or slug
+        if (!data || !data.name) {
+          const listRes = await fetch(`${API_BASE_URL}/restaurants`);
+          const listJson = await listRes.json().catch(() => null);
+          const list = listJson?.data || listJson || [];
+          if (Array.isArray(list)) {
+            data = list.find((r: any) => r.id === params.id || r.slug === params.id || r.code === params.id);
+          }
+        }
+
         if (data && data.name) {
+          const rawItems = data.menuItems || data.items || [];
+          const rawCategories = data.categories || data.menuCategories || [];
+
+          let categoriesList: any[] = [];
+          if (rawCategories.length > 0) {
+            categoriesList = rawCategories.map((c: any) => {
+              const matchedItems = rawItems.filter((m: any) => m.categoryId === c.id);
+              return {
+                name: c.name,
+                items: matchedItems.map((m: any) => ({
+                  id: m.id,
+                  name: m.name,
+                  price: m.price,
+                  description: m.description || "",
+                  image: m.imageUrl || "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
+                  isVeg: true,
+                })),
+              };
+            }).filter((c: any) => c.items.length > 0);
+          }
+
+          if (categoriesList.length === 0 && rawItems.length > 0) {
+            categoriesList = [
+              {
+                name: "Popular Dishes",
+                items: rawItems.map((m: any) => ({
+                  id: m.id,
+                  name: m.name,
+                  price: m.price,
+                  description: m.description || "",
+                  image: m.imageUrl || "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
+                  isVeg: true,
+                })),
+              },
+            ];
+          }
+
           setRestaurant({
             id: data.id,
             name: data.name,
             image: data.imageUrl || "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800",
-            menuCategories: (data.categories || []).map((c: any) => ({
-              name: c.name,
-              items: (data.menuItems || [])
-                .filter((m: any) => m.categoryId === c.id)
-                .map((m: any) => ({
-                  id: m.id,
-                  name: m.name,
-                  price: m.price,
-                  description: m.description,
-                  image: m.imageUrl || "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
-                  isVeg: true,
-                })),
-            })),
+            menuCategories: categoriesList,
           });
+        } else {
+          setRestaurant((prev: any) => ({
+            ...prev,
+            name: "Dining Restaurant",
+          }));
         }
-      })
-      .catch((e) => console.warn("QR table restaurant fetch warning:", e));
+      } catch (e) {
+        console.warn("QR table restaurant fetch error:", e);
+        setRestaurant((prev: any) => ({
+          ...prev,
+          name: "Dining Restaurant",
+        }));
+      }
+    }
+
+    if (params.id) {
+      loadTableRestaurant();
+    }
   }, [params.id]);
 
   const tableNumber = params.tableId ? params.tableId.toUpperCase() : "T01";

@@ -44,6 +44,7 @@ export default function QRScannerPage() {
   // Initialize camera stream if available
   useEffect(() => {
     let stream: MediaStream | null = null;
+    let isMounted = true;
 
     async function startCamera() {
       try {
@@ -52,25 +53,68 @@ export default function QRScannerPage() {
           return;
         }
         stream = await navigator.mediaDevices.getUserMedia({
-          video: { facingMode: "environment" },
+          video: { facingMode: { ideal: "environment" } },
         });
-        if (videoRef.current) {
+        if (isMounted && videoRef.current) {
           videoRef.current.srcObject = stream;
+          videoRef.current.setAttribute("playsinline", "true");
+          videoRef.current.play().catch(() => {});
           setIsCameraActive(true);
         }
       } catch (err: any) {
-        setCameraError("Camera access disabled or unavailable. You can upload a QR image or enter the code below.");
+        if (isMounted) {
+          setCameraError("Camera access disabled or unavailable. You can upload a QR image or enter the code below.");
+        }
       }
     }
 
     startCamera();
 
     return () => {
+      isMounted = false;
       if (stream) {
         stream.getTracks().forEach((track) => track.stop());
       }
     };
   }, []);
+
+  // Continuous live camera QR detection loop
+  useEffect(() => {
+    if (!isCameraActive) return;
+
+    let animId: number;
+    let detector: any = null;
+
+    if (typeof window !== "undefined" && "BarcodeDetector" in window) {
+      try {
+        detector = new (window as any).BarcodeDetector({ formats: ["qr_code"] });
+      } catch {}
+    }
+
+    const scanFrame = async () => {
+      if (videoRef.current && videoRef.current.readyState === videoRef.current.HAVE_ENOUGH_DATA) {
+        if (detector) {
+          try {
+            const codes = await detector.detect(videoRef.current);
+            if (codes && codes.length > 0 && codes[0].rawValue) {
+              const parsed = parseQRContent(codes[0].rawValue);
+              if (parsed) {
+                handleQRResolved(parsed);
+                return;
+              }
+            }
+          } catch {}
+        }
+      }
+      animId = requestAnimationFrame(scanFrame);
+    };
+
+    animId = requestAnimationFrame(scanFrame);
+
+    return () => {
+      cancelAnimationFrame(animId);
+    };
+  }, [isCameraActive]);
 
   // Helper to parse QR text string into restaurantId and tableId
   const parseQRContent = (rawText: string): ParsedQR | null => {
@@ -322,15 +366,13 @@ export default function QRScannerPage() {
 
       {/* Viewfinder / Video Feed Container */}
       <div className="relative w-full max-w-xs aspect-square mx-auto my-auto rounded-[32px] border-2 border-dashed border-[#FF6B4A]/60 flex flex-col items-center justify-center p-6 text-center overflow-hidden bg-black/40 shadow-2xl">
-        {isCameraActive ? (
-          <video
-            ref={videoRef}
-            autoPlay
-            playsInline
-            muted
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        ) : null}
+        <video
+          ref={videoRef}
+          autoPlay
+          playsInline
+          muted
+          className={`absolute inset-0 w-full h-full object-cover ${isCameraActive ? "opacity-100" : "opacity-0"}`}
+        />
 
         {/* Animated scanning laser line */}
         <motion.div

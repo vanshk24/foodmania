@@ -62,8 +62,32 @@ export default function BusinessMenuPage() {
     try {
       const stored = localStorage.getItem("fm_restaurant_id");
       if (stored) rId = stored;
+      if (!rId) {
+        const u = localStorage.getItem("fm_biz_user");
+        if (u) {
+          const parsed = JSON.parse(u);
+          if (parsed.restaurantId) rId = parsed.restaurantId;
+        }
+      }
+      if (!rId) {
+        const params = new URLSearchParams(window.location.search);
+        rId = params.get("restaurantId") || "";
+      }
+      if (!rId) {
+        const allRes = await fetch(`${API_BASE_URL}/restaurants`);
+        const allJson = await allRes.json().catch(() => null);
+        const list = allJson?.data || allJson || [];
+        if (Array.isArray(list) && list.length > 0) {
+          rId = list[0].id;
+        }
+      }
     } catch {}
+
     setRestaurantId(rId);
+    if (!rId) {
+      setLoading(false);
+      return;
+    }
 
     setLoading(true);
     setError(null);
@@ -140,7 +164,7 @@ export default function BusinessMenuPage() {
     setFormName("");
     const defaultCat = categoriesList[0];
     setFormCategory(defaultCat?.name || "Main Course");
-    setFormCategoryId(defaultCat?.id || "cat-mains");
+    setFormCategoryId(defaultCat?.id || "");
     setFormPrice(299);
     setFormIsVeg(true);
     setFormIsBestseller(false);
@@ -164,16 +188,21 @@ export default function BusinessMenuPage() {
 
   const handleSaveItem = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formName.trim()) return;
+    if (!formName.trim() || !restaurantId) return;
 
     setFormLoading(true);
+
+    const token = localStorage.getItem("fm_token") || localStorage.getItem("food_mania_token") || "";
 
     try {
       if (editingItem) {
         // UPDATE ITEM
         const res = await fetch(`${API_BASE_URL}/restaurants/items/${editingItem.id}`, {
           method: "PATCH",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: token ? `Bearer ${token}` : "",
+          },
           body: JSON.stringify({
             name: formName,
             price: formPrice,
@@ -198,10 +227,13 @@ export default function BusinessMenuPage() {
         }
       } else {
         // CREATE NEW ITEM
-        const targetCatId = formCategoryId || categoriesList[0]?.id || "cat-mains";
+        const targetCatId = formCategoryId || categoriesList[0]?.id || "";
         const res = await fetch(`${API_BASE_URL}/restaurants/${restaurantId}/items`, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: token ? `Bearer ${token}` : "",
+          },
           body: JSON.stringify({
             name: formName,
             price: formPrice,
@@ -229,11 +261,11 @@ export default function BusinessMenuPage() {
           setItems((prev) => [newItem, ...prev]);
         }
       }
-    } catch (e) {
-      console.warn("Menu item save error:", e);
+      setIsModalOpen(false);
+    } catch (err) {
+      console.error("Save item error:", err);
     } finally {
       setFormLoading(false);
-      setIsModalOpen(false);
     }
   };
 
