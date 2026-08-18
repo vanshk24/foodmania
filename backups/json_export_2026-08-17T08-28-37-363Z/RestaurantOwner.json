@@ -1,0 +1,200 @@
+[
+  {
+    "id": "a574ef2b-aa06-4887-aa6c-1ed59492a824",
+    "name": "Rohit Sharma",
+    "email": "rohit@urbancafe.com",
+    "phone": "+91 98765 11111",
+    "restaurantId": "the-urban-cafe",
+    "createdAt": "2026-08-07T12:16:09.513Z",
+    "updatedAt": "2026-08-07T12:16:09.513Z"
+  },
+  {
+    "id": "b5669f5e-17c3-4d85-ba7d-9a3a0a9d6e24",
+    "name": "Vikramaditya Roy",
+    "email": "owner_1786349851640@royalspice.com",
+    "phone": "+91 98200 12345",
+    "restaurantId": "61fc09de-12db-4e4a-86b1-a370f9b5e8a8",
+    "createdAt": "2026-08-10T08:17:31.816Z",
+    "updatedAt": "2026-08-10T08:17:31.816Z"
+  },
+  {
+    "id": "b0e4b370-1993-40b5-a307-565ed7239158",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786350927572@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "8bc60fae-24c1-4807-adc3-0cba5ae82ac2",
+    "createdAt": "2026-08-10T08:35:27.585Z",
+    "updatedAt": "2026-08-10T08:35:27.585Z"
+  },
+  {
+    "id": "e244212b-bfec-410c-9e45-2e8b2648ac2e",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786350979183@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "d8ac74ce-3bff-44b1-b0f8-f82507550503",
+    "createdAt": "2026-08-10T08:36:19.188Z",
+    "updatedAt": "2026-08-10T08:36:19.188Z"
+  },
+  {
+    "id": "2d245155-7a30-437f-a81d-86535f5642be",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786430786017@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "52ba7639-afe8-48bb-a354-8c9541038a58",
+    "createdAt": "2026-08-11T06:46:26.051Z",
+    "updatedAt": "2026-08-11T06:46:26.051Z"
+  },
+  {
+    "id": "04747a15-a6a9-4e06-9638-5ab477e3dbe5",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786433212730@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "00e53d62-c8ff-4438-8c9d-779a77b48e53",
+    "createdAt": "2026-08-11T07:26:52.753Z",
+    "updatedAt": "2026-08-11T07:26:52.753Z"
+  },
+  {
+    "id": "28070e5b-b37a-4f34-99db-66ee49c3ff7a",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786449462843@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "2c49b364-beeb-4bb4-b348-8ee58317e5cd",
+    "createdAt": "2026-08-11T11:57:42.857Z",
+    "updatedAt": "2026-08-11T11:57:42.857Z"
+  },
+  {
+    "id": "d370f219-9d4e-4861-b88a-294cb3104d03",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786450672025@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "6a15a48a-1fe6-4a83-99f3-997f93cbf35a",
+    "createdAt": "2026-08-11T12:17:52.042Z",
+    "updatedAt": "2026-08-11T12:17:52.042Z"
+  },
+  {
+    "id": "78efd004-898e-49fc-aa2e-a085936703d8",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786452016613@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "23bbf2b6-56c7-4fe3-9269-651705dac079",
+    "createdAt": "2026-08-11T12:40:16.627Z",
+    "updatedAt": "2026-08-11T12:40:16.627Z"
+  },
+  {
+    "id": "8259a40b-9d9b-4936-bce6-8b7f1490d713",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786518232394@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "214ab2ab-2a82-42e3-8efd-f3881d3b5fb3",
+    "createdAt": "2026-08-12T07:03:52.402Z",
+    "updatedAt": "2026-08-12T07:03:52.402Z"
+  },
+  {
+    "id": "158a9ded-f7f8-47de-ad55-9cb151bf5503",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786518680431@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "49f92d1b-bc53-4e4a-aea3-9fd6f3e0e253",
+    "createdAt": "2026-08-12T07:11:20.441Z",
+    "updatedAt": "2026-08-12T07:11:20.441Z"
+  },
+  {
+    "id": "20234863-2bd5-461a-ab6e-9a982838f5e9",
+    "name": "lucifer morning star",
+    "email": "lux@gmail.com",
+    "phone": "898038-0279",
+    "restaurantId": "b5a95f0b-c274-4b6b-82b4-f13e73ab281b",
+    "createdAt": "2026-08-12T07:47:48.321Z",
+    "updatedAt": "2026-08-12T07:47:48.321Z"
+  },
+  {
+    "id": "f20678b8-9212-4642-ad68-b4cffe07cb39",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786604638424@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "5ecdc092-c3ed-465d-ad41-1503c75d9e42",
+    "createdAt": "2026-08-13T07:03:58.436Z",
+    "updatedAt": "2026-08-13T07:03:58.436Z"
+  },
+  {
+    "id": "63858463-7db7-4b0f-8042-3cb7071b4182",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786689165952@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "43f65dae-8fd4-49f9-8b5a-107e26c1f51c",
+    "createdAt": "2026-08-14T06:32:45.963Z",
+    "updatedAt": "2026-08-14T06:32:45.963Z"
+  },
+  {
+    "id": "c0e13492-6443-464d-b195-cfd0423acb64",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786689726438@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "8b592d07-b126-4da7-b2ec-7373389fc227",
+    "createdAt": "2026-08-14T06:42:06.451Z",
+    "updatedAt": "2026-08-14T06:42:06.451Z"
+  },
+  {
+    "id": "be023799-d634-4022-bf59-d5a81c4a9d5c",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786778522426@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "e5688dbb-23b9-4b99-9df8-3fa867ad307b",
+    "createdAt": "2026-08-15T07:22:02.432Z",
+    "updatedAt": "2026-08-15T07:22:02.432Z"
+  },
+  {
+    "id": "c78722bf-0ce4-4d6d-89bc-e86c17151533",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786780298087@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "0b8ffc9a-820e-4a9f-9db4-91c083bcd7f5",
+    "createdAt": "2026-08-15T07:51:38.149Z",
+    "updatedAt": "2026-08-15T07:51:38.149Z"
+  },
+  {
+    "id": "fd526fb3-e095-4f4d-92f0-63a0c47f9d42",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786822595299@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "b8f37817-45f8-4eab-babf-20530fa53e8a",
+    "createdAt": "2026-08-15T19:36:35.366Z",
+    "updatedAt": "2026-08-15T19:36:35.366Z"
+  },
+  {
+    "id": "1a42adc2-9c82-495e-b11b-ac967ad8536d",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786824568627@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "9d956e86-2f45-4048-844d-383bd9b52a63",
+    "createdAt": "2026-08-15T20:09:28.692Z",
+    "updatedAt": "2026-08-15T20:09:28.692Z"
+  },
+  {
+    "id": "f7219804-a555-49c7-a497-890734536d14",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786824804885@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "4cafb979-9130-4b8d-ae44-2f8604e1f0c8",
+    "createdAt": "2026-08-15T20:13:24.982Z",
+    "updatedAt": "2026-08-15T20:13:24.982Z"
+  },
+  {
+    "id": "85b550d8-4e54-4d49-9ec9-4c2f24748fcf",
+    "name": "kai",
+    "email": "jo@com",
+    "phone": "07098867908",
+    "restaurantId": "2580e8e3-dac4-407f-8e31-37b2a91e5a7c",
+    "createdAt": "2026-08-15T22:05:15.331Z",
+    "updatedAt": "2026-08-15T22:05:15.331Z"
+  },
+  {
+    "id": "11068c96-4023-4c42-a412-2d84347848da",
+    "name": "Bistro Owner",
+    "email": "owner.e2e-bistro-1786864464619@foodmania.com",
+    "phone": "+91 98000 12345",
+    "restaurantId": "8af9db6e-46c7-4b93-abcd-23dc874c3bdb",
+    "createdAt": "2026-08-16T07:14:24.687Z",
+    "updatedAt": "2026-08-16T07:14:24.687Z"
+  }
+]

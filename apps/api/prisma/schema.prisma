@@ -1,0 +1,194 @@
+// Food Mania Monorepo - Prisma ORM Schema
+// Database: PostgreSQL (foodmania_dev)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id             String   @id @default(uuid())
+  email          String   @unique
+  name           String?
+  phone          String?
+  password       String?
+  role           String   @default("CUSTOMER") // CUSTOMER, OWNER, STAFF, SUPER_ADMIN
+  restaurantCode String?
+  restaurantId   String?
+  is2FAEnabled   Boolean  @default(false)
+  twoFactorSecret String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model Restaurant {
+  id           String   @id @default(uuid())
+  name         String
+  slug         String   @unique
+  city         String
+  address      String?
+  phone        String?
+  code         String?  @unique
+  cuisine      String?  @default("Multi-Cuisine")
+  rating       Float    @default(4.5)
+  reviewCount  Int      @default(0)
+  imageUrl     String?
+  bannerUrl    String?
+  deliveryFee  Float    @default(40)
+  minOrder     Float    @default(200)
+  status       String   @default("ACTIVE")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model RestaurantOwner {
+  id           String   @id @default(uuid())
+  name         String
+  email        String   @unique
+  phone        String?
+  restaurantId String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model RestaurantTable {
+  id           String   @id @default(uuid())
+  tableNumber  String
+  capacity     Int      @default(4)
+  status       String   @default("AVAILABLE")
+  restaurantId String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model MenuCategory {
+  id           String   @id @default(uuid())
+  name         String
+  restaurantId String
+  sortOrder    Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model MenuItem {
+  id           String   @id @default(uuid())
+  name         String
+  price        Float
+  description  String?
+  imageUrl     String?
+  isAvailable  Boolean  @default(true)
+  categoryId   String
+  restaurantId String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Order {
+  id            String   @id @default(uuid())
+  orderNumber   String   @unique
+  totalAmount   Float
+  status        String   @default("PENDING") // PENDING, ACCEPTED, PREPARING, READY, COMPLETED, CANCELLED
+  paymentStatus String   @default("PENDING_PAYMENT") // PENDING_PAYMENT, PAYMENT_PROCESSING, PAID, PAYMENT_FAILED
+  paymentMethod String   @default("CARD")
+  customerName  String?
+  customerPhone String?
+  deliveryAddress String?
+  restaurantId  String
+  userId        String?
+  tableId       String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model OrderItem {
+  id         String   @id @default(uuid())
+  orderId    String
+  menuItemId String
+  quantity   Int
+  price      Float
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model Booking {
+  id           String   @id @default(uuid())
+  bookingCode  String   @unique
+  guestName    String
+  guestPhone   String
+  guestCount   Int
+  bookingDate  DateTime
+  timeSlot     String
+  status       String   @default("PENDING") // PENDING, CONFIRMED, CANCELLED, COMPLETED
+  restaurantId String
+  tableId      String?
+  userId       String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Review {
+  id           String   @id @default(uuid())
+  rating       Int
+  comment      String?
+  customerName String?
+  restaurantId String
+  userId       String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Coupon {
+  id              String   @id @default(uuid())
+  code            String   @unique
+  discountPercent Float
+  maxDiscount     Float?
+  minOrderAmount  Float?
+  isActive        Boolean  @default(true)
+  restaurantId    String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Notification {
+  id           String   @id @default(uuid())
+  title        String
+  message      String
+  type         String   @default("INFO")
+  isRead       Boolean  @default(false)
+  userId       String?
+  restaurantId String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Subscription {
+  id            String   @id @default(uuid())
+  plan          String   @default("BASIC")
+  status        String   @default("ACTIVE")
+  monthlyAmount Float
+  startDate     DateTime @default(now())
+  endDate       DateTime
+  restaurantId  String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Payment {
+  id               String   @id @default(uuid())
+  orderId          String
+  amount           Float
+  currency         String   @default("INR")
+  status           String   @default("PENDING") // PENDING, PROCESSING, SUCCESS, FAILED, REFUNDED
+  method           String   @default("CARD")
+  gatewayOrderId   String?
+  gatewayPaymentId String?
+  gatewaySignature String?
+  failureReason    String?
+  userId           String?
+  restaurantId     String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}

@@ -1,0 +1,346 @@
+[
+  {
+    "id": "cat-starters",
+    "name": "Starters & Appetizers",
+    "restaurantId": "the-urban-cafe",
+    "sortOrder": 1,
+    "createdAt": "2026-08-07T12:16:09.520Z",
+    "updatedAt": "2026-08-07T12:16:09.520Z"
+  },
+  {
+    "id": "cat-mains",
+    "name": "Main Course",
+    "restaurantId": "the-urban-cafe",
+    "sortOrder": 2,
+    "createdAt": "2026-08-07T12:16:09.521Z",
+    "updatedAt": "2026-08-07T12:16:09.521Z"
+  },
+  {
+    "id": "cat-beverages",
+    "name": "Beverages & Shakes",
+    "restaurantId": "the-urban-cafe",
+    "sortOrder": 3,
+    "createdAt": "2026-08-07T12:16:09.522Z",
+    "updatedAt": "2026-08-07T12:16:09.522Z"
+  },
+  {
+    "id": "cat-burgers",
+    "name": "Signature Burgers",
+    "restaurantId": "burger-hub",
+    "sortOrder": 1,
+    "createdAt": "2026-08-07T12:16:09.527Z",
+    "updatedAt": "2026-08-07T12:16:09.527Z"
+  },
+  {
+    "id": "4e183f50-e59e-4ac5-bb35-b626fd364e71",
+    "name": "Chef Specials",
+    "restaurantId": "61fc09de-12db-4e4a-86b1-a370f9b5e8a8",
+    "sortOrder": 1,
+    "createdAt": "2026-08-10T08:17:31.894Z",
+    "updatedAt": "2026-08-10T08:17:31.894Z"
+  },
+  {
+    "id": "77d4e2a3-8ff1-4737-bdfb-f427b190030c",
+    "name": "Chef Specials",
+    "restaurantId": "8bc60fae-24c1-4807-adc3-0cba5ae82ac2",
+    "sortOrder": 1,
+    "createdAt": "2026-08-10T08:35:27.653Z",
+    "updatedAt": "2026-08-10T08:35:27.653Z"
+  },
+  {
+    "id": "ccb3ead6-77c8-43e9-a829-2656c0b22567",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "8bc60fae-24c1-4807-adc3-0cba5ae82ac2",
+    "sortOrder": 2,
+    "createdAt": "2026-08-10T08:35:27.906Z",
+    "updatedAt": "2026-08-10T08:35:27.906Z"
+  },
+  {
+    "id": "1952ba73-adb7-4884-85a2-d11b2cf8dd88",
+    "name": "Chef Specials",
+    "restaurantId": "d8ac74ce-3bff-44b1-b0f8-f82507550503",
+    "sortOrder": 1,
+    "createdAt": "2026-08-10T08:36:19.256Z",
+    "updatedAt": "2026-08-10T08:36:19.256Z"
+  },
+  {
+    "id": "b580caef-3978-4e03-ad5f-0a13c34dfa41",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "d8ac74ce-3bff-44b1-b0f8-f82507550503",
+    "sortOrder": 2,
+    "createdAt": "2026-08-10T08:36:19.486Z",
+    "updatedAt": "2026-08-10T08:36:19.486Z"
+  },
+  {
+    "id": "b6c6d551-e78e-4bb4-84a1-ba9e2843970d",
+    "name": "Chef Specials",
+    "restaurantId": "52ba7639-afe8-48bb-a354-8c9541038a58",
+    "sortOrder": 1,
+    "createdAt": "2026-08-11T06:46:26.182Z",
+    "updatedAt": "2026-08-11T06:46:26.182Z"
+  },
+  {
+    "id": "e2deef90-8f5e-4e7a-8a86-69bf6cfdbaa9",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "52ba7639-afe8-48bb-a354-8c9541038a58",
+    "sortOrder": 2,
+    "createdAt": "2026-08-11T06:46:26.708Z",
+    "updatedAt": "2026-08-11T06:46:26.708Z"
+  },
+  {
+    "id": "d050706b-c405-4331-9fab-99abcd29d833",
+    "name": "Chef Specials",
+    "restaurantId": "00e53d62-c8ff-4438-8c9d-779a77b48e53",
+    "sortOrder": 1,
+    "createdAt": "2026-08-11T07:26:52.884Z",
+    "updatedAt": "2026-08-11T07:26:52.884Z"
+  },
+  {
+    "id": "50ca77ac-6a03-4c24-8437-500774b3be5b",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "00e53d62-c8ff-4438-8c9d-779a77b48e53",
+    "sortOrder": 2,
+    "createdAt": "2026-08-11T07:26:53.265Z",
+    "updatedAt": "2026-08-11T07:26:53.265Z"
+  },
+  {
+    "id": "2b17f899-83c4-4f03-a39e-ca344c9e2f77",
+    "name": "Chef Specials",
+    "restaurantId": "2c49b364-beeb-4bb4-b348-8ee58317e5cd",
+    "sortOrder": 1,
+    "createdAt": "2026-08-11T11:57:42.941Z",
+    "updatedAt": "2026-08-11T11:57:42.941Z"
+  },
+  {
+    "id": "de7b58a2-cf68-40d3-b70b-3e4477ca17c4",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "2c49b364-beeb-4bb4-b348-8ee58317e5cd",
+    "sortOrder": 2,
+    "createdAt": "2026-08-11T11:57:43.254Z",
+    "updatedAt": "2026-08-11T11:57:43.254Z"
+  },
+  {
+    "id": "84797b28-a454-4661-b698-9513e7307f84",
+    "name": "Chef Specials",
+    "restaurantId": "6a15a48a-1fe6-4a83-99f3-997f93cbf35a",
+    "sortOrder": 1,
+    "createdAt": "2026-08-11T12:17:52.162Z",
+    "updatedAt": "2026-08-11T12:17:52.162Z"
+  },
+  {
+    "id": "0845b4da-5776-461d-8d48-cd0d424dfe5e",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "6a15a48a-1fe6-4a83-99f3-997f93cbf35a",
+    "sortOrder": 2,
+    "createdAt": "2026-08-11T12:17:52.517Z",
+    "updatedAt": "2026-08-11T12:17:52.517Z"
+  },
+  {
+    "id": "43ee0c00-ad07-4046-96c9-c399e0ced31e",
+    "name": "Chef Specials",
+    "restaurantId": "23bbf2b6-56c7-4fe3-9269-651705dac079",
+    "sortOrder": 1,
+    "createdAt": "2026-08-11T12:40:16.768Z",
+    "updatedAt": "2026-08-11T12:40:16.768Z"
+  },
+  {
+    "id": "6bbb7d33-bbe2-4bfa-823e-deca841b81c7",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "23bbf2b6-56c7-4fe3-9269-651705dac079",
+    "sortOrder": 2,
+    "createdAt": "2026-08-11T12:40:17.148Z",
+    "updatedAt": "2026-08-11T12:40:17.148Z"
+  },
+  {
+    "id": "62a370e0-6b1c-4323-ba20-7930d130a061",
+    "name": "Chef Specials",
+    "restaurantId": "214ab2ab-2a82-42e3-8efd-f3881d3b5fb3",
+    "sortOrder": 1,
+    "createdAt": "2026-08-12T07:03:52.471Z",
+    "updatedAt": "2026-08-12T07:03:52.471Z"
+  },
+  {
+    "id": "3bc62d92-fc02-4988-874d-ed81fa34925f",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "214ab2ab-2a82-42e3-8efd-f3881d3b5fb3",
+    "sortOrder": 2,
+    "createdAt": "2026-08-12T07:03:52.714Z",
+    "updatedAt": "2026-08-12T07:03:52.714Z"
+  },
+  {
+    "id": "8740263d-c853-4a9a-bf6f-78bd4c05f145",
+    "name": "Chef Specials",
+    "restaurantId": "49f92d1b-bc53-4e4a-aea3-9fd6f3e0e253",
+    "sortOrder": 1,
+    "createdAt": "2026-08-12T07:11:20.513Z",
+    "updatedAt": "2026-08-12T07:11:20.513Z"
+  },
+  {
+    "id": "3eeff149-054d-4d43-9b6c-d28c9f0172aa",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "49f92d1b-bc53-4e4a-aea3-9fd6f3e0e253",
+    "sortOrder": 2,
+    "createdAt": "2026-08-12T07:11:20.763Z",
+    "updatedAt": "2026-08-12T07:11:20.763Z"
+  },
+  {
+    "id": "56d793a1-bf1d-4b3a-bd64-f8b0f913c587",
+    "name": "Chef Specials",
+    "restaurantId": "b5a95f0b-c274-4b6b-82b4-f13e73ab281b",
+    "sortOrder": 1,
+    "createdAt": "2026-08-12T07:47:48.455Z",
+    "updatedAt": "2026-08-12T07:47:48.455Z"
+  },
+  {
+    "id": "4424cfd3-5e7e-45c8-aa98-bbc0ffe21298",
+    "name": "Chef Specials",
+    "restaurantId": "5ecdc092-c3ed-465d-ad41-1503c75d9e42",
+    "sortOrder": 1,
+    "createdAt": "2026-08-13T07:03:58.557Z",
+    "updatedAt": "2026-08-13T07:03:58.557Z"
+  },
+  {
+    "id": "731344a4-143e-493f-9d5c-72cf29f6ce14",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "5ecdc092-c3ed-465d-ad41-1503c75d9e42",
+    "sortOrder": 2,
+    "createdAt": "2026-08-13T07:03:58.823Z",
+    "updatedAt": "2026-08-13T07:03:58.823Z"
+  },
+  {
+    "id": "80d5ea25-83e4-47a6-9ba3-ceaccebb1411",
+    "name": "Chef Specials",
+    "restaurantId": "43f65dae-8fd4-49f9-8b5a-107e26c1f51c",
+    "sortOrder": 1,
+    "createdAt": "2026-08-14T06:32:46.043Z",
+    "updatedAt": "2026-08-14T06:32:46.043Z"
+  },
+  {
+    "id": "4a157d24-76b4-423e-8f90-69775b5f0316",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "43f65dae-8fd4-49f9-8b5a-107e26c1f51c",
+    "sortOrder": 2,
+    "createdAt": "2026-08-14T06:32:46.439Z",
+    "updatedAt": "2026-08-14T06:32:46.439Z"
+  },
+  {
+    "id": "4bbc7387-fbe9-4d4c-b9ca-d2465e17637a",
+    "name": "Chef Specials",
+    "restaurantId": "8b592d07-b126-4da7-b2ec-7373389fc227",
+    "sortOrder": 1,
+    "createdAt": "2026-08-14T06:42:06.520Z",
+    "updatedAt": "2026-08-14T06:42:06.520Z"
+  },
+  {
+    "id": "7c9b37b6-4834-4f3b-87cb-f20ce73d6a67",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "8b592d07-b126-4da7-b2ec-7373389fc227",
+    "sortOrder": 2,
+    "createdAt": "2026-08-14T06:42:06.835Z",
+    "updatedAt": "2026-08-14T06:42:06.835Z"
+  },
+  {
+    "id": "fe63fc15-cae6-4afb-8dac-a58a1f680812",
+    "name": "Chef Specials",
+    "restaurantId": "e5688dbb-23b9-4b99-9df8-3fa867ad307b",
+    "sortOrder": 1,
+    "createdAt": "2026-08-15T07:22:02.497Z",
+    "updatedAt": "2026-08-15T07:22:02.497Z"
+  },
+  {
+    "id": "e4ffcecd-59a5-49ba-8589-755fe2da4cea",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "e5688dbb-23b9-4b99-9df8-3fa867ad307b",
+    "sortOrder": 2,
+    "createdAt": "2026-08-15T07:22:02.839Z",
+    "updatedAt": "2026-08-15T07:22:02.839Z"
+  },
+  {
+    "id": "9522a63f-e685-4458-86e9-f2b55502780f",
+    "name": "Chef Specials",
+    "restaurantId": "0b8ffc9a-820e-4a9f-9db4-91c083bcd7f5",
+    "sortOrder": 1,
+    "createdAt": "2026-08-15T07:51:38.155Z",
+    "updatedAt": "2026-08-15T07:51:38.155Z"
+  },
+  {
+    "id": "1f81bef8-2a55-489f-ac30-09dc550c0c3e",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "0b8ffc9a-820e-4a9f-9db4-91c083bcd7f5",
+    "sortOrder": 2,
+    "createdAt": "2026-08-15T07:51:38.362Z",
+    "updatedAt": "2026-08-15T07:51:38.362Z"
+  },
+  {
+    "id": "2272c8ab-51fd-49e4-b269-0e7d0d7e7869",
+    "name": "Chef Specials",
+    "restaurantId": "b8f37817-45f8-4eab-babf-20530fa53e8a",
+    "sortOrder": 1,
+    "createdAt": "2026-08-15T19:36:35.371Z",
+    "updatedAt": "2026-08-15T19:36:35.371Z"
+  },
+  {
+    "id": "1080a488-ccd7-42cc-aefe-7f8a0433be4e",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "b8f37817-45f8-4eab-babf-20530fa53e8a",
+    "sortOrder": 2,
+    "createdAt": "2026-08-15T19:36:35.637Z",
+    "updatedAt": "2026-08-15T19:36:35.637Z"
+  },
+  {
+    "id": "71166911-2131-45c9-8f27-5306c4342346",
+    "name": "Chef Specials",
+    "restaurantId": "9d956e86-2f45-4048-844d-383bd9b52a63",
+    "sortOrder": 1,
+    "createdAt": "2026-08-15T20:09:28.697Z",
+    "updatedAt": "2026-08-15T20:09:28.697Z"
+  },
+  {
+    "id": "6a88232f-5a12-4d73-92cb-6bb2420779fd",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "9d956e86-2f45-4048-844d-383bd9b52a63",
+    "sortOrder": 2,
+    "createdAt": "2026-08-15T20:09:28.960Z",
+    "updatedAt": "2026-08-15T20:09:28.960Z"
+  },
+  {
+    "id": "47726b77-bd8c-4cec-8273-d408c6fad400",
+    "name": "Chef Specials",
+    "restaurantId": "4cafb979-9130-4b8d-ae44-2f8604e1f0c8",
+    "sortOrder": 1,
+    "createdAt": "2026-08-15T20:13:24.988Z",
+    "updatedAt": "2026-08-15T20:13:24.988Z"
+  },
+  {
+    "id": "cbeefedf-5bb4-4459-8e82-e35d51239637",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "4cafb979-9130-4b8d-ae44-2f8604e1f0c8",
+    "sortOrder": 2,
+    "createdAt": "2026-08-15T20:13:25.254Z",
+    "updatedAt": "2026-08-15T20:13:25.254Z"
+  },
+  {
+    "id": "faf51890-95ce-4d2d-8aa8-db418f19161e",
+    "name": "Chef Specials",
+    "restaurantId": "2580e8e3-dac4-407f-8e31-37b2a91e5a7c",
+    "sortOrder": 1,
+    "createdAt": "2026-08-15T22:05:15.338Z",
+    "updatedAt": "2026-08-15T22:05:15.338Z"
+  },
+  {
+    "id": "5567f359-846a-4718-8216-d3fa823da3f5",
+    "name": "Chef Specials",
+    "restaurantId": "8af9db6e-46c7-4b93-abcd-23dc874c3bdb",
+    "sortOrder": 1,
+    "createdAt": "2026-08-16T07:14:24.691Z",
+    "updatedAt": "2026-08-16T07:14:24.691Z"
+  },
+  {
+    "id": "b60569f4-6f81-4ed2-b048-dfc0e563dc06",
+    "name": "Handcrafted Pizzas",
+    "restaurantId": "8af9db6e-46c7-4b93-abcd-23dc874c3bdb",
+    "sortOrder": 2,
+    "createdAt": "2026-08-16T07:14:24.960Z",
+    "updatedAt": "2026-08-16T07:14:24.960Z"
+  }
+]

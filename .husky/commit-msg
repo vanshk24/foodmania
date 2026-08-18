@@ -1,0 +1,39 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# ============================================================
+# Food Mania — Commit Message Convention Validator
+# ============================================================
+# Format: <type>(<scope>): <description>
+#
+# Types: feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert
+# Scope: customer, business, admin, ui, shared, types, config, utils, theme, root
+#
+# Examples:
+#   feat(customer): add restaurant discovery search filters
+#   fix(business): resolve QR generation file naming bug
+#   docs(root): update contributing guide with branch strategy
+# ============================================================
+
+commit_msg_file="$1"
+commit_msg=$(cat "$commit_msg_file")
+
+pattern="^(feat|fix|docs|style|refactor|test|chore|perf|ci|build|revert)(\((customer|business|admin|ui|shared|types|config|utils|theme|root|api)\))?: .{1,100}$"
+
+if ! echo "$commit_msg" | grep -qE "$pattern"; then
+  echo ""
+  echo "❌ INVALID COMMIT MESSAGE"
+  echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  echo "  Your message: \"$commit_msg\""
+  echo ""
+  echo "  Required format: <type>(<scope>): <description>"
+  echo ""
+  echo "  Types: feat | fix | docs | style | refactor | test | chore | perf | ci | build | revert"
+  echo "  Scopes: customer | business | admin | ui | shared | types | config | utils | theme | root"
+  echo ""
+  echo "  Example: feat(customer): add restaurant search filters"
+  echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  exit 1
+fi
+
+echo "✅ Commit message is valid."

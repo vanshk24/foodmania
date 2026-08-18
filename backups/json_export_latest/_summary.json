@@ -1,0 +1,16 @@
+{
+  "User": 29,
+  "Restaurant": 24,
+  "RestaurantOwner": 22,
+  "RestaurantTable": 24,
+  "MenuCategory": 43,
+  "MenuItem": 45,
+  "Order": 94,
+  "OrderItem": 107,
+  "Booking": 51,
+  "Review": 22,
+  "Coupon": 0,
+  "Notification": 423,
+  "Subscription": 22,
+  "Payment": 85
+}

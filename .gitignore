@@ -1,0 +1,74 @@
+# ============================================================
+# Food Mania Monorepo — .gitignore
+# ============================================================
+
+# ----- Dependencies -----
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# ----- Build Outputs -----
+dist/
+build/
+out/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# ----- Testing -----
+coverage/
+.nyc_output/
+
+# ----- Environment Variables -----
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# Keep templates
+!.env.example
+!.env.*.example
+
+# ----- Logs -----
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ----- OS Generated -----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ----- IDEs & Editors -----
+.vscode/settings.json
+.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+.idea/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ----- Cache -----
+.cache/
+.eslintcache
+.prettier-cache
+.stylelintcache
+
+# ----- Misc -----
+*.pem
+*.key
+.vercel
+.netlify

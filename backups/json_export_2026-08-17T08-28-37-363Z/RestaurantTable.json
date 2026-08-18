@@ -1,0 +1,218 @@
+[
+  {
+    "id": "162eb9c1-1433-4830-86f8-6735dde7d7aa",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "61fc09de-12db-4e4a-86b1-a370f9b5e8a8",
+    "createdAt": "2026-08-10T08:17:31.898Z",
+    "updatedAt": "2026-08-10T08:17:31.898Z"
+  },
+  {
+    "id": "9dbd6191-88a0-4010-bf1f-4eebe0bfe31c",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "8bc60fae-24c1-4807-adc3-0cba5ae82ac2",
+    "createdAt": "2026-08-10T08:35:27.657Z",
+    "updatedAt": "2026-08-10T08:35:27.657Z"
+  },
+  {
+    "id": "6b05e648-4121-499a-a3c2-77da91313b2a",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "d8ac74ce-3bff-44b1-b0f8-f82507550503",
+    "createdAt": "2026-08-10T08:36:19.258Z",
+    "updatedAt": "2026-08-10T08:36:19.258Z"
+  },
+  {
+    "id": "77812bd6-e956-45e4-be0a-d327b5d6f6fe",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "52ba7639-afe8-48bb-a354-8c9541038a58",
+    "createdAt": "2026-08-11T06:46:26.188Z",
+    "updatedAt": "2026-08-11T06:46:26.188Z"
+  },
+  {
+    "id": "babb60a7-1e59-474f-9e37-bf699ff5c9e4",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "00e53d62-c8ff-4438-8c9d-779a77b48e53",
+    "createdAt": "2026-08-11T07:26:52.890Z",
+    "updatedAt": "2026-08-11T07:26:52.890Z"
+  },
+  {
+    "id": "15c503d6-01fa-4ccc-8d45-493479df95e6",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "2580e8e3-dac4-407f-8e31-37b2a91e5a7c",
+    "createdAt": "2026-08-15T22:05:15.340Z",
+    "updatedAt": "2026-08-15T22:05:15.340Z"
+  },
+  {
+    "id": "67961379-c88f-4771-91c2-5763bd08f2ac",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "2c49b364-beeb-4bb4-b348-8ee58317e5cd",
+    "createdAt": "2026-08-11T11:57:42.944Z",
+    "updatedAt": "2026-08-11T11:57:42.944Z"
+  },
+  {
+    "id": "d2d7712c-bd21-41dd-91b4-564a5e1010f5",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "6a15a48a-1fe6-4a83-99f3-997f93cbf35a",
+    "createdAt": "2026-08-11T12:17:52.165Z",
+    "updatedAt": "2026-08-11T12:17:52.165Z"
+  },
+  {
+    "id": "t-03",
+    "tableNumber": "T-03",
+    "capacity": 6,
+    "status": "AVAILABLE",
+    "restaurantId": "the-urban-cafe",
+    "createdAt": "2026-08-07T12:16:09.519Z",
+    "updatedAt": "2026-08-15T22:09:52.525Z"
+  },
+  {
+    "id": "9e25fa08-b6eb-4982-b04e-12b9d1939650",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "23bbf2b6-56c7-4fe3-9269-651705dac079",
+    "createdAt": "2026-08-11T12:40:16.771Z",
+    "updatedAt": "2026-08-11T12:40:16.771Z"
+  },
+  {
+    "id": "3603e456-f2f3-4ca7-981f-2a2c71aa6632",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "214ab2ab-2a82-42e3-8efd-f3881d3b5fb3",
+    "createdAt": "2026-08-12T07:03:52.473Z",
+    "updatedAt": "2026-08-12T07:03:52.473Z"
+  },
+  {
+    "id": "f65cdced-d8da-4166-81c9-05203866a2f1",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "49f92d1b-bc53-4e4a-aea3-9fd6f3e0e253",
+    "createdAt": "2026-08-12T07:11:20.516Z",
+    "updatedAt": "2026-08-12T07:11:20.516Z"
+  },
+  {
+    "id": "20a90c63-b6ca-448a-aff2-d26d2e54ad22",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "b5a95f0b-c274-4b6b-82b4-f13e73ab281b",
+    "createdAt": "2026-08-12T07:47:48.458Z",
+    "updatedAt": "2026-08-12T07:47:48.458Z"
+  },
+  {
+    "id": "95720b69-752d-42c8-ac53-e0040d084a6d",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "5ecdc092-c3ed-465d-ad41-1503c75d9e42",
+    "createdAt": "2026-08-13T07:03:58.561Z",
+    "updatedAt": "2026-08-13T07:03:58.561Z"
+  },
+  {
+    "id": "7c00419f-5b8d-4b61-9e32-5dc285636591",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "8af9db6e-46c7-4b93-abcd-23dc874c3bdb",
+    "createdAt": "2026-08-16T07:14:24.693Z",
+    "updatedAt": "2026-08-16T07:14:24.693Z"
+  },
+  {
+    "id": "25113b32-9d73-4c14-8a8a-535505ea008f",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "43f65dae-8fd4-49f9-8b5a-107e26c1f51c",
+    "createdAt": "2026-08-14T06:32:46.047Z",
+    "updatedAt": "2026-08-14T06:32:46.047Z"
+  },
+  {
+    "id": "t-01",
+    "tableNumber": "T-01",
+    "capacity": 2,
+    "status": "AVAILABLE",
+    "restaurantId": "the-urban-cafe",
+    "createdAt": "2026-08-07T12:16:09.516Z",
+    "updatedAt": "2026-08-16T07:14:25.327Z"
+  },
+  {
+    "id": "b3901e1e-6f5e-48d3-8580-531722eec197",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "8b592d07-b126-4da7-b2ec-7373389fc227",
+    "createdAt": "2026-08-14T06:42:06.523Z",
+    "updatedAt": "2026-08-14T06:42:06.523Z"
+  },
+  {
+    "id": "5466b2de-e590-4c43-9c14-f4f4beb5a7bb",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "e5688dbb-23b9-4b99-9df8-3fa867ad307b",
+    "createdAt": "2026-08-15T07:22:02.500Z",
+    "updatedAt": "2026-08-15T07:22:02.500Z"
+  },
+  {
+    "id": "t-02",
+    "tableNumber": "T-02",
+    "capacity": 4,
+    "status": "OCCUPIED",
+    "restaurantId": "the-urban-cafe",
+    "createdAt": "2026-08-07T12:16:09.518Z",
+    "updatedAt": "2026-08-16T07:24:36.459Z"
+  },
+  {
+    "id": "39ab4027-2da6-444c-8635-b6014d75251a",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "0b8ffc9a-820e-4a9f-9db4-91c083bcd7f5",
+    "createdAt": "2026-08-15T07:51:38.157Z",
+    "updatedAt": "2026-08-15T07:51:38.157Z"
+  },
+  {
+    "id": "3b3ebc91-ad77-427a-b46e-a997fa772338",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "b8f37817-45f8-4eab-babf-20530fa53e8a",
+    "createdAt": "2026-08-15T19:36:35.374Z",
+    "updatedAt": "2026-08-15T19:36:35.374Z"
+  },
+  {
+    "id": "fd03c9de-4af1-4313-9249-f30ac4a5b98f",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "9d956e86-2f45-4048-844d-383bd9b52a63",
+    "createdAt": "2026-08-15T20:09:28.699Z",
+    "updatedAt": "2026-08-15T20:09:28.699Z"
+  },
+  {
+    "id": "3e42f68b-6440-46a6-916a-20c015dc8fac",
+    "tableNumber": "T-01",
+    "capacity": 4,
+    "status": "AVAILABLE",
+    "restaurantId": "4cafb979-9130-4b8d-ae44-2f8604e1f0c8",
+    "createdAt": "2026-08-15T20:13:24.991Z",
+    "updatedAt": "2026-08-15T20:13:24.991Z"
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "3dde7c06-e535-4dc6-bfdd-0df6b80e526c",
+    "rating": 5,
+    "comment": "Absolutely amazing ambiance and delicious Truffle Risotto! Highly recommended.",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": "u-customer-1",
+    "createdAt": "2026-08-07T12:16:09.533Z",
+    "updatedAt": "2026-08-07T12:16:09.533Z"
+  },
+  {
+    "id": "96b3e924-ad02-4a34-96dd-942c0d68e19d",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-10T08:31:59.976Z",
+    "updatedAt": "2026-08-10T08:31:59.976Z"
+  },
+  {
+    "id": "3e1188b1-ea13-4868-b51a-a2a70209b0e3",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-11T07:26:45.291Z",
+    "updatedAt": "2026-08-11T07:26:45.291Z"
+  },
+  {
+    "id": "9f593f1e-cf4e-4cfa-acba-6149ad04147d",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-11T11:57:38.309Z",
+    "updatedAt": "2026-08-11T11:57:38.309Z"
+  },
+  {
+    "id": "3c6f2ea8-70bb-419b-97cb-50d946502759",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-11T12:17:29.978Z",
+    "updatedAt": "2026-08-11T12:17:29.978Z"
+  },
+  {
+    "id": "220483c6-b1fc-4355-906f-7cd31b88c48a",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-11T12:40:09.758Z",
+    "updatedAt": "2026-08-11T12:40:09.758Z"
+  },
+  {
+    "id": "17dcfc21-76a9-4f4f-bdde-40f6a9a18190",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-12T07:03:48.367Z",
+    "updatedAt": "2026-08-12T07:03:48.367Z"
+  },
+  {
+    "id": "98c58be0-40b5-49b6-bf95-7b32e49c1fee",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-12T07:10:26.074Z",
+    "updatedAt": "2026-08-12T07:10:26.074Z"
+  },
+  {
+    "id": "c7466304-cc66-4353-9754-543412d2c8e3",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-12T07:10:46.378Z",
+    "updatedAt": "2026-08-12T07:10:46.378Z"
+  },
+  {
+    "id": "7d55ae78-56b2-4232-891e-eeb346b93fac",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-12T07:10:58.514Z",
+    "updatedAt": "2026-08-12T07:10:58.514Z"
+  },
+  {
+    "id": "c5be4e31-414b-4f4f-91b5-cec9fac73fe1",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-12T07:11:17.534Z",
+    "updatedAt": "2026-08-12T07:11:17.534Z"
+  },
+  {
+    "id": "42de242d-d48f-4272-8008-b452e7a3285d",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-13T07:03:51.035Z",
+    "updatedAt": "2026-08-13T07:03:51.035Z"
+  },
+  {
+    "id": "d9659a8e-6051-4970-8e9b-887b11205314",
+    "rating": 5,
+    "comment": "Amazing food! Sourdough bruschetta was exceptional.",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "5ecdc092-c3ed-465d-ad41-1503c75d9e42",
+    "userId": null,
+    "createdAt": "2026-08-13T07:22:15.132Z",
+    "updatedAt": "2026-08-13T07:22:15.132Z"
+  },
+  {
+    "id": "108becad-eac8-4503-bd75-3dcf1d232561",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-14T06:32:39.375Z",
+    "updatedAt": "2026-08-14T06:32:39.375Z"
+  },
+  {
+    "id": "c9bcd219-5127-4ae4-9201-769d1fbcdf1e",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-14T06:41:27.389Z",
+    "updatedAt": "2026-08-14T06:41:27.389Z"
+  },
+  {
+    "id": "ae00cc9a-65a8-4593-a3b5-17d27a827023",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-14T06:41:59.856Z",
+    "updatedAt": "2026-08-14T06:41:59.856Z"
+  },
+  {
+    "id": "17b7fa77-4d09-4ec5-885a-91ce625dd52f",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-15T07:21:57.358Z",
+    "updatedAt": "2026-08-15T07:21:57.358Z"
+  },
+  {
+    "id": "f9c8099a-f763-4d22-88de-7f0e6b5a165c",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-15T07:51:34.169Z",
+    "updatedAt": "2026-08-15T07:51:34.169Z"
+  },
+  {
+    "id": "44bae228-c168-47d3-91a3-6776891a9da1",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-15T19:36:29.678Z",
+    "updatedAt": "2026-08-15T19:36:29.678Z"
+  },
+  {
+    "id": "6f36c007-dd6d-4a35-9a8b-196d2122cecc",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-15T20:09:23.912Z",
+    "updatedAt": "2026-08-15T20:09:23.912Z"
+  },
+  {
+    "id": "966a7535-d2c2-4605-b5fa-c29c3526bc37",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-15T20:13:19.167Z",
+    "updatedAt": "2026-08-15T20:13:19.167Z"
+  },
+  {
+    "id": "2271330d-cfcc-4948-b0ee-653e41cb0b4b",
+    "rating": 5,
+    "comment": "Excellent food and great ambiance!",
+    "customerName": "Gaurav Sharma",
+    "restaurantId": "the-urban-cafe",
+    "userId": null,
+    "createdAt": "2026-08-16T07:14:23.616Z",
+    "updatedAt": "2026-08-16T07:14:23.616Z"
+  }
+]

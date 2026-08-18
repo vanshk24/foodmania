@@ -1,0 +1,42 @@
+{
+  "name": "@food-mania/admin",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Food Mania Super Admin Panel — Restaurant Verification, Platform & Subscription Management",
+  "scripts": {
+    "dev": "next dev --port 3002",
+    "build": "next build",
+    "start": "next start --port 3002",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf .next out"
+  },
+  "dependencies": {
+    "@food-mania/types": "*",
+    "@food-mania/ui": "*",
+    "@food-mania/shared": "*",
+    "@food-mania/utils": "*",
+    "@food-mania/theme": "*",
+    "@tanstack/react-query": "^5.40.0",
+    "@tanstack/react-query-devtools": "^5.40.0",
+    "framer-motion": "^11.2.12",
+    "next": "^14.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.52.0",
+    "recharts": "^2.12.7",
+    "socket.io-client": "^4.7.5",
+    "zod": "^3.23.8",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "*"
+  }
+}
