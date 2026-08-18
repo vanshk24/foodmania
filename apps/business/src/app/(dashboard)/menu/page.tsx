@@ -19,7 +19,9 @@ import {
 import { Card, Badge, Button, Modal } from "@food-mania/ui";
 import { motion, AnimatePresence } from "framer-motion";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+import { getApiBaseUrl } from "@food-mania/shared";
+
+const API_BASE_URL = getApiBaseUrl();
 
 interface MenuItem {
   id: string;

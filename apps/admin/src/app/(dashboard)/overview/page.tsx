@@ -3,12 +3,20 @@
 import React, { useState, useEffect } from "react";
 import { Store, Users, ShoppingBag, CreditCard, Loader2, AlertCircle, RefreshCw } from "lucide-react";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+import { getApiBaseUrl } from "@food-mania/shared";
+
+const API_BASE_URL = getApiBaseUrl();
 
 function getAdminToken(): string {
   if (typeof window === "undefined") return "";
   try {
-    return localStorage.getItem("fm_admin_token") || "";
+    return (
+      localStorage.getItem("fm_admin_token") ||
+      localStorage.getItem("fm_token") ||
+      localStorage.getItem("food_mania_token") ||
+      localStorage.getItem("food_mania_admin_token") ||
+      ""
+    );
   } catch {
     return "";
   }

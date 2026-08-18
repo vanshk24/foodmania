@@ -5,7 +5,9 @@ import {
   XCircle, Star, Phone, Mail, ShoppingBag, Gift,
   Calendar, X, Clock, Loader2
 } from "lucide-react";
-import { AdminUser, UserStatus } from "@food-mania/shared";
+import { AdminUser, UserStatus, getApiBaseUrl } from "@food-mania/shared";
+
+const API_BASE_URL = getApiBaseUrl();
 
 // ─── Helper Token Getter ───────────────────────────────────────────────────
 
@@ -173,8 +175,6 @@ function UserCard({
   );
 }
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
-
 export default function AdminUsersPage() {
   const [users, setUsers] = useState<AdminUser[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -203,7 +203,7 @@ export default function AdminUsersPage() {
             totalOrders: u.totalOrders || 0,
             totalSpend: u.totalSpend || (u.totalOrders || 0) * 450,
             loyaltyPoints: (u.totalOrders || 0) * 50,
-            favouriteRestaurant: "The Urban Cafe",
+            favouriteRestaurant: u.restaurant?.name || "Multi-Cuisine",
             joinedDate: u.createdAt ? new Date(u.createdAt).toISOString().split("T")[0]! : new Date().toISOString().split("T")[0]!,
             lastActive: "Today",
           }));

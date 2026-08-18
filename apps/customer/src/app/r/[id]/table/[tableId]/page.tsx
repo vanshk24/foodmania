@@ -24,7 +24,9 @@ import { mockRestaurantRepo, eventBus, ServiceRequestPayload } from "@food-mania
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+import { getApiBaseUrl } from "@food-mania/shared";
+
+const API_BASE_URL = getApiBaseUrl();
 
 interface SmartQRTablePageProps {
   params: { id: string; tableId: string };

@@ -40,7 +40,9 @@ const STATUS_FILTERS: Array<{ id: string; label: string }> = [
   { id: "completed", label: "Completed" },
 ];
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+import { getApiBaseUrl } from "@food-mania/shared";
+
+const API_BASE_URL = getApiBaseUrl();
 
 export default function BusinessOrdersPage() {
   const [orders, setOrders] = useState<BusinessOrder[]>([]);
@@ -50,16 +52,27 @@ export default function BusinessOrdersPage() {
 
   const fetchBusinessOrders = () => {
     let restaurantId = "";
+    let token = "";
     if (typeof window !== "undefined") {
       try {
         const storedId = localStorage.getItem("fm_restaurant_id");
         if (storedId) restaurantId = storedId;
+        if (!restaurantId) {
+          const u = localStorage.getItem("fm_biz_user");
+          if (u) {
+            const parsed = JSON.parse(u);
+            if (parsed.restaurantId) restaurantId = parsed.restaurantId;
+          }
+        }
+        token = localStorage.getItem("fm_token") || localStorage.getItem("food_mania_token") || "";
       } catch {}
     }
 
     const qStr = restaurantId ? `?restaurantId=${encodeURIComponent(restaurantId)}` : "";
+    const headers: Record<string, string> = {};
+    if (token) headers["Authorization"] = `Bearer ${token}`;
 
-    fetch(`${API_BASE_URL}/orders${qStr}`)
+    fetch(`${API_BASE_URL}/orders${qStr}`, { headers })
       .then((res) => res.json())
       .then((json) => {
         const dbOrders = json.data || json;
