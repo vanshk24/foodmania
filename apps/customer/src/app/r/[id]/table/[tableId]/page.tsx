@@ -308,11 +308,11 @@ export default function SmartQRTablePage({ params }: SmartQRTablePageProps) {
                       onClick={() => {
                         try {
                           const existingCart = localStorage.getItem("food_mania_customer_cart");
-                          let cartObj: any = { restaurantId: params.id || "the-urban-cafe", restaurantName: restaurant.name, tableNumber, items: {} };
+                          let cartObj: any = { restaurantId: params.id || restaurant.id, restaurantName: restaurant.name, tableNumber, items: {} };
                           if (existingCart) {
                             try { cartObj = JSON.parse(existingCart); } catch {}
                           }
-                          cartObj.restaurantId = params.id || "the-urban-cafe";
+                          cartObj.restaurantId = params.id || restaurant.id;
                           cartObj.restaurantName = restaurant.name;
                           cartObj.tableNumber = tableNumber;
                           cartObj.items = cartObj.items || {};

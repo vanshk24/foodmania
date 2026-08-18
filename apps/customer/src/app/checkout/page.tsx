@@ -62,11 +62,11 @@ export default function CheckoutScreen() {
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-  const [restaurantId, setRestaurantId] = useState("the-urban-cafe");
-  const [restaurantName, setRestaurantName] = useState("The Urban Cafe");
+  const [restaurantId, setRestaurantId] = useState("");
+  const [restaurantName, setRestaurantName] = useState("");
   const [customerName, setCustomerName] = useState("Gaurav Sharma");
   const [customerPhone, setCustomerPhone] = useState("+91 98765 43210");
-  const [tableNumber, setTableNumber] = useState("Table 04");
+  const [tableNumber, setTableNumber] = useState("");
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   useEffect(() => {

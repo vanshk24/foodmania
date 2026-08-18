@@ -44,9 +44,9 @@ const NON_VEG_KEYWORDS = ["chicken", "beef", "pork", "salmon", "meat", "wings", 
 
 export default function SmartDigitalMenuPage({ params }: { params?: { id?: string } }) {
   const routeParams = useParams();
-  const restaurantId = (params?.id || routeParams?.id || "the-urban-cafe") as string;
+  const restaurantId = (params?.id || routeParams?.id || "") as string;
 
-  const [restaurantName, setRestaurantName] = useState("The Urban Cafe");
+  const [restaurantName, setRestaurantName] = useState("");
   const [menuCategories, setMenuCategories] = useState<MenuCategory[]>([
     { id: "all", name: "All Dishes", count: 0 },
   ]);

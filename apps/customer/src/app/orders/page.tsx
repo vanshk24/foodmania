@@ -30,8 +30,8 @@ export default function OrdersPage() {
           const mapped: OrderPayload[] = dbOrders.map((o: any) => ({
             orderId: o.orderNumber || o.id,
             restaurantId: o.restaurantId,
-            restaurantName: "The Urban Cafe",
-            tableNumber: o.tableId ? "Table 04" : (o.deliveryAddress || "Takeaway"),
+            restaurantName: o.restaurantName || o.restaurant?.name || "Dining Restaurant",
+            tableNumber: o.tableId || (o.deliveryAddress || "Takeaway"),
             customerName: o.customerName || "Customer",
             customerPhone: o.customerPhone || "+91 98765 43210",
             paymentStatus: o.paymentStatus || "PENDING_PAYMENT",

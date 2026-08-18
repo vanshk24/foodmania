@@ -38,8 +38,8 @@ export default function OrderTrackingScreen({ params }: OrderTrackingProps) {
           const mapped: OrderPayload = {
             orderId: o.orderNumber || o.id,
             restaurantId: o.restaurantId,
-            restaurantName: "The Urban Cafe",
-            tableNumber: o.tableId ? "Table 04" : (o.deliveryAddress || "Takeaway"),
+            restaurantName: o.restaurantName || o.restaurant?.name || "Dining Restaurant",
+            tableNumber: o.tableId || (o.deliveryAddress || "Takeaway"),
             customerName: o.customerName || "Customer",
             customerPhone: o.customerPhone || "+91 98765 43210",
             items: (o.items || []).map((item: any) => ({
@@ -336,7 +336,7 @@ export default function OrderTrackingScreen({ params }: OrderTrackingProps) {
             <Bell size={18} />
             <span>Call Waiter</span>
           </Button>
-          <Link href="/restaurant/the-urban-cafe/menu" className="flex-1">
+          <Link href={order?.restaurantId ? `/restaurant/${order.restaurantId}/menu` : "/explore"} className="flex-1">
             <Button variant="primary" size="lg" fullWidth className="min-h-[48px]">
               <span>+ Add More Items</span>
             </Button>

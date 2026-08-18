@@ -30,8 +30,8 @@ interface CartItem {
 }
 
 export default function CartScreen() {
-  const [restaurantName, setRestaurantName] = useState("The Urban Cafe");
-  const [restaurantId, setRestaurantId] = useState("the-urban-cafe");
+  const [restaurantName, setRestaurantName] = useState("");
+  const [restaurantId, setRestaurantId] = useState("");
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [couponCode, setCouponCode] = useState("FOODMANIA20");
   const [isCouponApplied, setIsCouponApplied] = useState(true);

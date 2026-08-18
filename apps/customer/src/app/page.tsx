@@ -26,7 +26,7 @@ const NOTIFICATIONS_LIST = [
   {
     id: "1",
     title: "Table Booking Confirmed!",
-    message: "Your table for 4 at The Urban Cafe is confirmed for today at 7:30 PM.",
+    message: "Your table for 4 at Spice Symphony is confirmed for today at 7:30 PM.",
     time: "10 min ago",
     unread: true,
     icon: "🎉",
@@ -105,15 +105,15 @@ export default function CustomerHomeScreen() {
             </div>
           </a>
           <a
-            href="/book"
+            href="/scan"
             className="flex items-center gap-3 bg-gradient-to-br from-[#63B46C] to-[#4B9A54] text-white rounded-[20px] px-4 py-3.5 shadow-md hover:shadow-lg active:scale-95 transition-all"
           >
             <div className="w-9 h-9 rounded-[12px] bg-white/20 flex items-center justify-center shrink-0">
               <CalendarDays size={18} />
             </div>
             <div>
-              <p className="font-bold text-sm leading-tight">For Table</p>
-              <p className="text-[10px] text-white/70">Book a seat</p>
+              <p className="font-bold text-sm leading-tight">Scan Table QR</p>
+              <p className="text-[10px] text-white/70">Scan & reserve table</p>
             </div>
           </a>
         </div>

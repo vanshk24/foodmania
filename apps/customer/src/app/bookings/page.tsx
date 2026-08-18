@@ -12,6 +12,7 @@ export interface BookingRecord {
   id: string;
   bookingCode: string;
   restaurantId: string;
+  restaurantName?: string;
   guestName: string;
   guestPhone: string;
   guestCount: number;
@@ -65,7 +66,7 @@ export default function BookingsPage() {
       <header className="sticky top-0 z-30 bg-white px-4 pt-4 pb-2 border-b border-gray-100 shadow-sm space-y-3">
         <div className="flex items-center justify-between">
           <h1 className="font-display font-bold text-xl text-[#1A1A2E]">My Table Bookings</h1>
-          <Link href="/restaurant/the-urban-cafe/book">
+          <Link href="/scan">
             <Button variant="primary" size="sm" className="text-xs">
               <Plus size={14} /> Book Table
             </Button>
@@ -115,7 +116,7 @@ export default function BookingsPage() {
             <p className="text-xs text-[#8C8CA1] max-w-xs mx-auto">
               Reserve your favorite table instantly with contactless QR ordering at top dining spots!
             </p>
-            <Link href="/restaurant/the-urban-cafe/book">
+            <Link href="/scan">
               <Button variant="primary" size="md" className="mt-2">
                 Reserve a Table
               </Button>
@@ -140,7 +141,7 @@ export default function BookingsPage() {
                 <div className="flex items-center justify-between border-b border-gray-100 pb-2.5">
                   <div>
                     <h3 className="font-display font-bold text-base text-[#1A1A2E]">
-                      {b.restaurantId === "the-urban-cafe" ? "The Urban Cafe" : "Dining Restaurant"}
+                      {b.restaurantName || (b.restaurantId ? `Restaurant (${b.restaurantId})` : "Dining Restaurant")}
                     </h3>
                     <p className="text-xs text-[#8C8CA1] flex items-center gap-1 mt-0.5">
                       <MapPin size={12} /> Booking Ref: <strong className="text-[#1A1A2E] font-mono">{b.bookingCode}</strong>

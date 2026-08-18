@@ -11,7 +11,7 @@ export function BottomNav() {
   const NAV_ITEMS = [
     { id: "home", label: "Home", href: "/", icon: Home },
     { id: "explore", label: "Explore", href: "/explore", icon: Compass },
-    { id: "bookings", label: "Bookings", href: "/restaurant/the-urban-cafe/book", icon: Calendar },
+    { id: "bookings", label: "Bookings", href: "/bookings", icon: Calendar },
     { id: "orders", label: "Orders", href: "/orders", icon: ShoppingBag },
     { id: "profile", label: "Profile", href: "/profile", icon: User },
   ];

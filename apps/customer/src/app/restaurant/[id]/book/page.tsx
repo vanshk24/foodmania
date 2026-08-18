@@ -49,17 +49,28 @@ export default function BookTablePage({ params }: { params?: { id?: string } }) 
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   useEffect(() => {
+    // Read table query parameter if scanned from QR
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const tableFromUrl = urlParams.get("table") || urlParams.get("tableId") || urlParams.get("t");
+      if (tableFromUrl) {
+        setSelectedTableNumber(tableFromUrl);
+      }
+    } catch {}
+
     // Read restaurant info
-    fetch(`${API_BASE_URL}/restaurants/${restaurantId}`)
-      .then((res) => (res.ok ? res.json() : null))
-      .then((json) => {
-        const data = json?.data || json;
-        if (data?.name) {
-          setRestaurantName(data.name);
-          if (data.address) setRestaurantAddress(data.address);
-        }
-      })
-      .catch(() => {});
+    if (restaurantId) {
+      fetch(`${API_BASE_URL}/restaurants/${restaurantId}`)
+        .then((res) => (res.ok ? res.json() : null))
+        .then((json) => {
+          const data = json?.data || json;
+          if (data?.name) {
+            setRestaurantName(data.name);
+            if (data.address) setRestaurantAddress(data.address);
+          }
+        })
+        .catch(() => {});
+    }
 
     // Read user info if available
     try {
