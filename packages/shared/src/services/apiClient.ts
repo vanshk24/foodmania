@@ -1,10 +1,24 @@
 // Food Mania Monorepo REST API Client
 // Connects Customer App, Business Panel, and Admin Panel to http://localhost:4000
 
-export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+export function getApiBaseUrl(): string {
+  if (process.env.NEXT_PUBLIC_API_URL) {
+    return process.env.NEXT_PUBLIC_API_URL;
+  }
+  if (typeof window !== "undefined") {
+    const host = window.location.hostname;
+    if (host !== "localhost" && host !== "127.0.0.1" && !host.startsWith("192.168.")) {
+      return "https://thousands-saskatchewan-queensland-intl.trycloudflare.com";
+    }
+  }
+  return "http://localhost:4000";
+}
+
+export const API_BASE_URL = getApiBaseUrl();
 
 async function apiFetch<T>(endpoint: string, options?: RequestInit): Promise<T> {
-  const url = `${API_BASE_URL}${endpoint}`;
+  const baseUrl = getApiBaseUrl();
+  const url = `${baseUrl}${endpoint}`;
   try {
     const res = await fetch(url, {
       ...options,

@@ -19,7 +19,8 @@ app.use(
       if (!origin) return callback(null, true);
       if (
         config.corsOrigins.includes("*") ||
-        config.corsOrigins.includes(origin)
+        config.corsOrigins.includes(origin) ||
+        origin.endsWith(".trycloudflare.com")
       ) {
         return callback(null, true);
       }
